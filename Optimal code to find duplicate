@@ -1,0 +1,9 @@
+from collections import Counter
+def findDuplicate(arr):
+    b=Counter(arr)
+    for key,value in b.items():
+        if value>1:
+            return key
+    
+
+    
